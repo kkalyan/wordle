@@ -1,10 +1,12 @@
 import re
 import sys
 
-print(sys.argv)
-exit 
 
+# usage
+# python wordle.py REGEX MISSING_LETTERS LETTER_IN_WRONG_POSITIONS
+# example REGEX A???? or ????? 
 #f = open("/usr/share/dict/words")
+#english-words is more complete than /usr/share/dict 
 #https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt
 f = open("words.txt")
 words = f.read().splitlines()
